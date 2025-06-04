@@ -21,14 +21,11 @@ def notebooks_path():
 
 @pytest.fixture(scope="session")
 def problem1(notebooks_path):
-    section_data, namespace = import_notebook(notebooks_path / "Exercise-7-problem-1.ipynb")
+    section_data, namespace = import_notebook(notebooks_path / "Exercise-2.ipynb")
     yield section_data, namespace
     
 
-@pytest.fixture(scope="session")
-def problem2(notebooks_path):
-    section_data, namespace = import_notebook(notebooks_path / "Exercise-7-problem-2.ipynb")
-    yield section_data, namespace  
+
 
 
 
