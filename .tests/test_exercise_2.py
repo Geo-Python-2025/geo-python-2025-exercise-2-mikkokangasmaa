@@ -76,7 +76,7 @@ class TestExercise2:
 
         assert station_start_years == [2016, 2012, 2005, 2003, 1989, 1937, 1904, 1844]
 
-    @points(0.5, "Problem 2, Part 1: Something wrong with the months list!")
+    @points(1, "Problem 2, Part 1: Something wrong with the months list!")
     def test_problem_2_part_1_months(self, ex2):
         section_data, namespace = ex2
         section = "Part 4"  # continue section tagging from problem 1
@@ -86,7 +86,7 @@ class TestExercise2:
         assert months[3] == 'April'
         assert months[-1] == 'December'
 
-    @points(0.5, "Problem 2, Part 1: Something wrong with the ´average_temp´ list!")
+    @points(2, "Problem 2, Part 1: Something wrong with the ´average_temp´ list!")
     def test_problem_2_part_1_average_temp(self, ex2):
         section_data, namespace = ex2
         section = "Part 4"  # continue section tagging from problem 1
@@ -97,7 +97,7 @@ class TestExercise2:
         assert average_temp[-1] == -1.5
 
     
-    @points(0.5, "Problem 2, Part 1: Variable `selected_month_index` is not integer type!")
+    @points(2, "Problem 2, Part 1: Variable `selected_month_index` is not integer type!")
     def test_problem_2_part_1_index(self, ex2):
         section_data, namespace = ex2
         section = "Part 4"  # continue section tagging from problem 1
